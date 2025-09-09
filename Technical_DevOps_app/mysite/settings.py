@@ -30,7 +30,7 @@ DEBUG = env.bool("DJANGO_DEBUG", default=True)
 # Hosts allowed to connect
 ALLOWED_HOSTS = env.list(
     "DJANGO_ALLOWED_HOSTS",
-    default=["127.0.0.1", "localhost", "192.168.43.43"]
+    default=["127.0.0.1", "localhost", ".elb.amazonaws.com", "0.0.0.0"]
 )
 
 # Application definition
